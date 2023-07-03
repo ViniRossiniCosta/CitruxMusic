@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Inter+Tight:wght@200&family=Inter:wght@300&family=Kaisei+Opti&family=Lato:wght@100;400&family=Roboto:wght@100&display=swap');
+img:hover {
+    cursor: pointer;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title-page {
+    width: 15%;
+    border-radius: 3%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: 	rgba(255,250,250,0.9);
+    position: absolute;
+    top: 15.6%;
+    left: 40%;
+}
+.title-page h1 {
+    font-size: 150%;
+    color: #fc6A03;
+}
+.music {
+    width: 23%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.legenda {
+    width: 100%;
+    justify-content: start;
+}
+.music img{
+    border: transparent;
+    border-radius: 3%;
+    width: 100%;
+    height: 90%;
+}
+.content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+label{
+    position: relative;
+    color: #f5f5f5;
+    font-size: 50%;
+    left: 3%;
+}
+
+@media only screen and (max-width: 700px) {
+    .title-page{
+        width: 20%;
+    }
+    .title-page h1 {
+        font-size: 90%;
+    }
+
+    img {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+

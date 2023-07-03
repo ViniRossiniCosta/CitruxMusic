@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/index.css">
+   <link rel="stylesheet" href="/css/Hits.css">
+   <link rel="shortcut icon" href="/assests/iconsAndBg/android-chrome-192x192.png" type="image/x-icon">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <title>Hits</title>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <div class="menu">
+            <ul>
+               <ul>
+                  <div class="logo">
+                     <img src="/assests/iconsAndBg/sound (1).png" alt="Ondas sonoras" srcset="" class="icon">               
+                  </div>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a href="/pages/Historico.html">Historico</a></li>
+                  <li><a href="/pages/Hits.html">Hits</a></li>
+                  <li><a href="/pages/Pvc.html">Playlists para você</a></li>
+                  <li><a href="/pages/podcast.html">Podcasts</a></li>
+                  <li><button type="button" class="btn"><a href="/pages/FromLoginSignup.html">Login</a></button></li>
+               </ul>
+            </ul>
+         </div>
+      </nav>
+      <div class="img-overlay">
+      </div>
+   </header>
+   <div class="title-page">
+      <h1>Hits</h1>
+   </div>
+   <div class="content">
+      <div class="music">
+         <img src="/assests/imgs-exemplos/the-weeknd.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="um">hit 1</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/SZA.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="um">hit 2</label>
+         </div>
+      </div>
+
+      <div class="music">
+         <img src="/assests/imgs-exemplos/download.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="um">hit 3</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/boston-album-cover.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="um">hit 4</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/beyonc-wears-custom-made-outfit-by-a-dominican-fashion-designer-for-her-renaissance-album-cover.jpg.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="dois">hit 5</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/pitbull-globalization-2014.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="dois">hit 6</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/Hip-Hop-Album-Cover.jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="dois">hit 7</label>
+         </div>
+      </div>
+      <div class="music">
+         <img src="/assests/imgs-exemplos/images (1).jpg" alt="" onclick="abreMusic()">
+         <div class="legenda">
+            <label for="" id="dois">hit 8</label>
+         </div>
+      </div>
+   </div>
+   </div>
+</body>
+
+<script>
+   function abreMusic(){
+      Swal.fire({
+      title: 'Aproveite sua musica',
+      text: 'De o play',
+      imageUrl: 'https://unsplash.it/400/200',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+      html: "<audio controls><source src='/assests/mp3/Cars on the Road - Cast - TRUCKS (From _Cars on the Road_) (320 kbps).mp3' type='audio/mp3'></audio>"
+      })
+   }
+</script>
+
+</html>
